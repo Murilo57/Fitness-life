@@ -1,0 +1,26 @@
+unit Menu;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, jpeg;
+
+type
+  TfrmMenu = class(TForm)
+    pnlCenter: TPanel;
+    imgBackGround: TImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMenu: TfrmMenu;
+
+implementation
+
+{$R *.dfm}
+
+end.
