@@ -12,16 +12,12 @@ type
     imgBackGround: TImage;
     pnlButtons: TPanel;
     btnClient: TSpeedButton;
-    btnFinancial: TSpeedButton;
-    btnSheet: TSpeedButton;
-    btnPerfomance: TSpeedButton;
-    pnlTop: TPanel;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    Panel1: TPanel;
     Menu: TMainMenu;
     teste1: TMenuItem;
-    btnSair: TSpeedButton;
-    pnlUser: TPanel;
-    Panel1: TPanel;
-    imgLogoUser: TImage;
   private
     { Private declarations }
   public

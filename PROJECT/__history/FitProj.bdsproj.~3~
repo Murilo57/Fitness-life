@@ -119,8 +119,8 @@
 			<Linker Name="ExeDescription"></Linker>
 		</Linker>
 		<Directories>
-			<Directories Name="OutputDir">C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\EXE</Directories>
-			<Directories Name="UnitOutputDir">C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\DCU</Directories>
+			<Directories Name="OutputDir">C:\Users\user\OneDrive\Documentos\GitHub\Delphi\Fitness\EXE</Directories>
+			<Directories Name="UnitOutputDir">C:\Users\user\OneDrive\Documentos\GitHub\Delphi\Fitness\DCU</Directories>
 			<Directories Name="PackageDLLOutputDir"></Directories>
 			<Directories Name="PackageDCPOutputDir"></Directories>
 			<Directories Name="SearchPath"></Directories>

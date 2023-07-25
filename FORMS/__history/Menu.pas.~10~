@@ -20,8 +20,6 @@ type
     teste1: TMenuItem;
     btnSair: TSpeedButton;
     pnlUser: TPanel;
-    Panel1: TPanel;
-    imgLogoUser: TImage;
   private
     { Private declarations }
   public
