@@ -1,0 +1,24 @@
+unit CadClient;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TfrmCadClient = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadClient: TfrmCadClient;
+
+implementation
+
+{$R *.dfm}
+
+end.

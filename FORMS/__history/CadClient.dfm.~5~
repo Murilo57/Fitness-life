@@ -1,0 +1,70 @@
+object frmCadClient: TfrmCadClient
+  Left = 0
+  Top = 0
+  Caption = 'Register Client'
+  ClientHeight = 380
+  ClientWidth = 714
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl: TPageControl
+    Left = 0
+    Top = 41
+    Width = 714
+    Height = 339
+    ActivePage = tbQueryClient
+    Align = alClient
+    TabOrder = 0
+    object tbQueryClient: TTabSheet
+      Caption = 'Query Client'
+      ExplicitLeft = 7
+      object pnFilter: TPanel
+        Left = 0
+        Top = 0
+        Width = 706
+        Height = 73
+        Align = alTop
+        BevelOuter = bvNone
+        TabOrder = 0
+      end
+    end
+    object tbRegister: TTabSheet
+      Caption = 'Register Client'
+      ImageIndex = 1
+      ExplicitLeft = 7
+    end
+  end
+  object pnlTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 714
+    Height = 41
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 16501564
+    TabOrder = 1
+    ExplicitLeft = 224
+    ExplicitTop = 16
+    ExplicitWidth = 185
+    object lblTittle: TLabel
+      Left = 7
+      Top = 9
+      Width = 181
+      Height = 23
+      Caption = 'Clients Fitness Life'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+end

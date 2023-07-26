@@ -1,15 +1,16 @@
-unit Menu;
+unit CadClient;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, jpeg;
+  Dialogs, ExtCtrls, ComCtrls;
 
 type
-  TfrmMenu = class(TForm)
-    pnlCenter: TPanel;
-    imgBackGround: TImage;
+  TfrmCadClient = class(TForm)
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    pnlTop: TPanel;
   private
     { Private declarations }
   public
@@ -17,7 +18,7 @@ type
   end;
 
 var
-  frmMenu: TfrmMenu;
+  frmCadClient: TfrmCadClient;
 
 implementation
 

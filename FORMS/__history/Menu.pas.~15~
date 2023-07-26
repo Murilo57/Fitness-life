@@ -23,11 +23,9 @@ type
     Panel1: TPanel;
     imgLogoUser: TImage;
     lbUser: TLabel;
-    lbWelcome: TLabel;
+    Label1: TLabel;
     btnUsers: TSpeedButton;
     lbLevel: TLabel;
-    procedure btnExitClick(Sender: TObject);
-    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,19 +37,6 @@ var
 
 implementation
 
-uses DmConection;
-
 {$R *.dfm}
-
-procedure TfrmMenu.btnExitClick(Sender: TObject);
-begin
-  Application.Terminate;
-end;
-
-procedure TfrmMenu.FormShow(Sender: TObject);
-begin
-  lbUser.Caption := dm.cdsLoginNAME.AsString;
-  lbLevel.Caption := dm.cdsLoginLEVEL.AsString;
-end;
 
 end.
