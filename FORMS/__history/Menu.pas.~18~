@@ -26,7 +26,6 @@ type
     lbWelcome: TLabel;
     btnUsers: TSpeedButton;
     lbLevel: TLabel;
-    procedure btnClientClick(Sender: TObject);
     procedure btnExitClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
@@ -40,15 +39,9 @@ var
 
 implementation
 
-uses DmConection, CadClient;
+uses DmConection;
 
 {$R *.dfm}
-
-procedure TfrmMenu.btnClientClick(Sender: TObject);
-begin
-  frmCadClient := TfrmCadClient.Create(nil);
-  frmCadClient.ShowModal;
-end;
 
 procedure TfrmMenu.btnExitClick(Sender: TObject);
 begin

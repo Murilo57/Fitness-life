@@ -2,8 +2,8 @@ object frmCadClient: TfrmCadClient
   Left = 0
   Top = 0
   Caption = 'Register Client'
-  ClientHeight = 673
-  ClientWidth = 1029
+  ClientHeight = 655
+  ClientWidth = 969
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,8 +17,8 @@ object frmCadClient: TfrmCadClient
   object PageControl: TPageControl
     Left = 0
     Top = 41
-    Width = 1029
-    Height = 632
+    Width = 969
+    Height = 614
     ActivePage = tbQueryClient
     Align = alClient
     TabOrder = 0
@@ -32,14 +32,13 @@ object frmCadClient: TfrmCadClient
       object pnFilter: TPanel
         Left = 0
         Top = 0
-        Width = 1021
+        Width = 961
         Height = 97
         Align = alTop
         TabOrder = 0
-        ExplicitWidth = 961
         object Bevel1: TBevel
           Left = 13
-          Top = 11
+          Top = 7
           Width = 568
           Height = 80
         end
@@ -47,8 +46,8 @@ object frmCadClient: TfrmCadClient
       object DBGrid1: TDBGrid
         Left = 0
         Top = 97
-        Width = 1021
-        Height = 507
+        Width = 961
+        Height = 489
         Align = alClient
         TabOrder = 1
         TitleFont.Charset = DEFAULT_CHARSET
@@ -69,7 +68,7 @@ object frmCadClient: TfrmCadClient
   object pnlTop: TPanel
     Left = 0
     Top = 0
-    Width = 1029
+    Width = 969
     Height = 41
     Align = alTop
     BevelOuter = bvNone

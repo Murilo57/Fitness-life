@@ -4908,6 +4908,7 @@ object frmMenu: TfrmMenu
           FFFFFFFFFFFF}
         Layout = blGlyphTop
         ParentFont = False
+        OnClick = btnClientClick
         ExplicitLeft = 912
         ExplicitTop = 8
         ExplicitHeight = 79
