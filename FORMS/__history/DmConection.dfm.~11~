@@ -150,54 +150,44 @@ object dm: Tdm
     end
   end
   object cdsClient: TClientDataSet
-    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'dspClient'
     Left = 104
     Top = 136
     object cdsClientID: TIntegerField
-      DisplayWidth = 12
       FieldName = 'ID'
       Required = True
     end
     object cdsClientNAME: TStringField
-      DisplayWidth = 48
       FieldName = 'NAME'
       Size = 40
     end
     object cdsClientDATACAD: TDateField
-      DisplayWidth = 12
       FieldName = 'DATACAD'
     end
     object cdsClientAGE: TIntegerField
-      DisplayWidth = 9
       FieldName = 'AGE'
     end
     object cdsClientSEX: TStringField
-      DisplayWidth = 4
       FieldName = 'SEX'
       FixedChar = True
       Size = 1
     end
     object cdsClientCPF: TStringField
-      DisplayWidth = 16
       FieldName = 'CPF'
       FixedChar = True
       Size = 10
     end
     object cdsClientMONTH_PAYMENT: TFMTBCDField
-      DisplayWidth = 19
       FieldName = 'MONTH_PAYMENT'
       Precision = 15
       Size = 2
     end
     object cdsClientWEIGHT: TFloatField
-      DisplayWidth = 12
       FieldName = 'WEIGHT'
     end
     object cdsClientHEIGHT: TFloatField
-      DisplayWidth = 12
       FieldName = 'HEIGHT'
     end
   end

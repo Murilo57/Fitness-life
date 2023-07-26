@@ -18,7 +18,7 @@ object frmCadClient: TfrmCadClient
     Top = 41
     Width = 865
     Height = 616
-    ActivePage = tbQueryClient
+    ActivePage = tbRegister
     Align = alClient
     TabOrder = 0
     ExplicitWidth = 1029
@@ -116,6 +116,7 @@ object frmCadClient: TfrmCadClient
           Height = 21
           ItemHeight = 13
           TabOrder = 3
+          Text = 'cbQuery'
           Items.Strings = (
             'ID'
             'NAME'
@@ -199,7 +200,7 @@ object frmCadClient: TfrmCadClient
         ExplicitWidth = 1021
         object bvRegister: TBevel
           Left = 16
-          Top = 11
+          Top = 0
           Width = 990
           Height = 241
         end

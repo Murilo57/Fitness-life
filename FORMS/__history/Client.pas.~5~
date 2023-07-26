@@ -1,0 +1,42 @@
+unit Client;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, ComCtrls, StdCtrls, Grids, DBGrids, Mask, DBCtrls;
+
+type
+  TfrmCadClient = class(TForm)
+    PageControl: TPageControl;
+    tbQueryClient: TTabSheet;
+    pnlTop: TPanel;
+    lblTittle: TLabel;
+    tbRegister: TTabSheet;
+    pnFilter: TPanel;
+    gridClients: TDBGrid;
+    Bevel1: TBevel;
+    cbQuery: TDBComboBox;
+    edQuery: TDBEdit;
+    edStartDate: TDBEdit;
+    edEndDate: TDBEdit;
+    Bevel2: TBevel;
+    lbFilter: TLabel;
+    lbStartDate: TLabel;
+    lbEndDate: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadClient: TfrmCadClient;
+
+implementation
+
+uses DmConection;
+
+{$R *.dfm}
+
+end.

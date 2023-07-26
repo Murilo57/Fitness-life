@@ -1,0 +1,32 @@
+unit CadClient;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, ComCtrls, StdCtrls, Grids, DBGrids;
+
+type
+  TfrmCadClient = class(TForm)
+    PageControl: TPageControl;
+    tbQueryClient: TTabSheet;
+    pnlTop: TPanel;
+    lblTittle: TLabel;
+    tbRegister: TTabSheet;
+    pnFilter: TPanel;
+    DBGrid1: TDBGrid;
+    Bevel1: TBevel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadClient: TfrmCadClient;
+
+implementation
+
+{$R *.dfm}
+
+end.

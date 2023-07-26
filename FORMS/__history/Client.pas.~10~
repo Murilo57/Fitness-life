@@ -1,11 +1,10 @@
-unit CadClient;
+unit Client;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, ComCtrls, StdCtrls, Grids, DBGrids, Mask, DBCtrls,
-  frxpngimage, Buttons;
+  Dialogs, ExtCtrls, ComCtrls, StdCtrls, Grids, DBGrids, Mask, DBCtrls;
 
 type
   TfrmCadClient = class(TForm)
@@ -48,11 +47,6 @@ type
     DBEdit9: TDBEdit;
     Panel1: TPanel;
     Image1: TImage;
-    btnNewClient: TBitBtn;
-    BitBtn1: TBitBtn;
-    btnChangeRegis: TBitBtn;
-    BitBtn3: TBitBtn;
-    BitBtn2: TBitBtn;
   private
     { Private declarations }
   public

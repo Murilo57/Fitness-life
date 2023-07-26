@@ -1,11 +1,10 @@
-unit CadClient;
+unit Client;
 
 interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, ComCtrls, StdCtrls, Grids, DBGrids, Mask, DBCtrls,
-  frxpngimage, Buttons;
+  Dialogs, ExtCtrls, ComCtrls, StdCtrls, Grids, DBGrids, Mask, DBCtrls;
 
 type
   TfrmCadClient = class(TForm)
@@ -26,33 +25,8 @@ type
     cbQuery: TComboBox;
     tbRegister: TTabSheet;
     pnRegisters: TPanel;
-    pnButtons: TPanel;
-    bvRegister: TBevel;
-    lbCode: TLabel;
-    edID: TDBEdit;
-    lbName: TLabel;
-    edName: TDBEdit;
-    Label3: TLabel;
-    edRegistrationDate: TDBEdit;
-    lbAge: TLabel;
-    edAge: TDBEdit;
-    lbSex: TLabel;
-    edSex: TDBEdit;
-    Label6: TLabel;
-    DBEdit6: TDBEdit;
-    Label7: TLabel;
-    DBEdit7: TDBEdit;
-    Label8: TLabel;
-    DBEdit8: TDBEdit;
-    Label9: TLabel;
-    DBEdit9: TDBEdit;
-    Panel1: TPanel;
-    Image1: TImage;
-    btnNewClient: TBitBtn;
-    BitBtn1: TBitBtn;
-    btnChangeRegis: TBitBtn;
-    BitBtn3: TBitBtn;
-    BitBtn2: TBitBtn;
+    Panel2: TPanel;
+    Bevel3: TBevel;
   private
     { Private declarations }
   public

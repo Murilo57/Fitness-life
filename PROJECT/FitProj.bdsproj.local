@@ -6,5 +6,11 @@
     <Transaction>2023/07/25 13:45:01.234.bdsproj,C:\Users\user\OneDrive\Documentos\Borland Studio Projects\Project1.bdsproj=C:\Users\user\OneDrive\Documentos\GitHub\Fitness\PROJECT\FitProj.bdsproj</Transaction>
     <Transaction>2023/07/26 11:41:03.055.pas,C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\PROJECT\Unit1.pas=C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\PROJECT\DmConection.pas</Transaction>
     <Transaction>2023/07/26 11:41:03.055.dfm,C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\PROJECT\Unit1.dfm=C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\PROJECT\DmConection.dfm</Transaction>
+    <Transaction>2023/07/26 12:05:16.096.pas,C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\PROJECT\Unit1.pas=C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\FORMS\CadClient.pas</Transaction>
+    <Transaction>2023/07/26 12:05:16.096.dfm,C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\PROJECT\Unit1.dfm=C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\FORMS\CadClient.dfm</Transaction>
+    <Transaction>2023/07/26 13:23:45.966.pas,C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\FORMS\CadClient.pas=C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\FORMS\Client.pas</Transaction>
+    <Transaction>2023/07/26 13:23:45.966.dfm,C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\FORMS\CadClient.dfm=C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\FORMS\Client.dfm</Transaction>
+    <Transaction>2023/07/26 14:30:40.452.pas,C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\FORMS\Client.pas=C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\FORMS\CadClient.pas</Transaction>
+    <Transaction>2023/07/26 14:30:40.452.dfm,C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\FORMS\Client.dfm=C:\Users\user\OneDrive\Documentos\GitHub\Fitness-life\FORMS\CadClient.dfm</Transaction>
   </Transactions>
 </BorlandProject>

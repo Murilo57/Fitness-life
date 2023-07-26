@@ -4,8 +4,7 @@ uses
   Forms,
   Menu in '..\FORMS\Menu.pas' {frmMenu},
   ULogin in '..\FORMS\ULogin.pas' {FrmLogin},
-  DmConection in '..\FORMS\DmConection.pas' {dm: TDataModule},
-  CadClient in '..\FORMS\CadClient.pas' {frmCadClient};
+  DmConection in '..\FORMS\DmConection.pas' {dm: TDataModule};
 
 {$R *.res}
 

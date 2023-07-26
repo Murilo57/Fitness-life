@@ -153,52 +153,30 @@ object dm: Tdm
     Active = True
     Aggregates = <>
     Params = <>
-    ProviderName = 'dspClient'
+    ProviderName = 'dspLogin'
     Left = 104
     Top = 136
     object cdsClientID: TIntegerField
-      DisplayWidth = 12
       FieldName = 'ID'
       Required = True
     end
     object cdsClientNAME: TStringField
-      DisplayWidth = 48
       FieldName = 'NAME'
-      Size = 40
+      Required = True
+      Size = 30
     end
-    object cdsClientDATACAD: TDateField
-      DisplayWidth = 12
-      FieldName = 'DATACAD'
+    object cdsClientLOGIN: TStringField
+      FieldName = 'LOGIN'
+      Required = True
+      Size = 30
     end
-    object cdsClientAGE: TIntegerField
-      DisplayWidth = 9
-      FieldName = 'AGE'
+    object cdsClientPASSWORD: TStringField
+      FieldName = 'PASSWORD'
+      Required = True
+      Size = 50
     end
-    object cdsClientSEX: TStringField
-      DisplayWidth = 4
-      FieldName = 'SEX'
-      FixedChar = True
-      Size = 1
-    end
-    object cdsClientCPF: TStringField
-      DisplayWidth = 16
-      FieldName = 'CPF'
-      FixedChar = True
-      Size = 10
-    end
-    object cdsClientMONTH_PAYMENT: TFMTBCDField
-      DisplayWidth = 19
-      FieldName = 'MONTH_PAYMENT'
-      Precision = 15
-      Size = 2
-    end
-    object cdsClientWEIGHT: TFloatField
-      DisplayWidth = 12
-      FieldName = 'WEIGHT'
-    end
-    object cdsClientHEIGHT: TFloatField
-      DisplayWidth = 12
-      FieldName = 'HEIGHT'
+    object cdsClientLEVEL: TStringField
+      FieldName = 'LEVEL'
     end
   end
   object dtsClient: TDataSource

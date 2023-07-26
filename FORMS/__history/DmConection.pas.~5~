@@ -37,13 +37,9 @@ type
     sqlClientHEIGHT: TFloatField;
     cdsClientID: TIntegerField;
     cdsClientNAME: TStringField;
-    cdsClientDATACAD: TDateField;
-    cdsClientAGE: TIntegerField;
-    cdsClientSEX: TStringField;
-    cdsClientCPF: TStringField;
-    cdsClientMONTH_PAYMENT: TFMTBCDField;
-    cdsClientWEIGHT: TFloatField;
-    cdsClientHEIGHT: TFloatField;
+    cdsClientLOGIN: TStringField;
+    cdsClientPASSWORD: TStringField;
+    cdsClientLEVEL: TStringField;
   private
     { Private declarations }
   public
