@@ -18,12 +18,11 @@ type
     pnlTop: TPanel;
     Menu: TMainMenu;
     teste1: TMenuItem;
-    btnExit: TSpeedButton;
+    btnSair: TSpeedButton;
     pnlUser: TPanel;
     Panel1: TPanel;
     imgLogoUser: TImage;
-    lbUser: TLabel;
-    Label1: TLabel;
+    lbUsuario: TLabel;
   private
     { Private declarations }
   public

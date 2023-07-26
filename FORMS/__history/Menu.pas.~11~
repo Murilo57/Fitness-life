@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, jpeg, Buttons, Menus, StdCtrls;
+  Dialogs, ExtCtrls, jpeg, Buttons, Menus;
 
 type
   TfrmMenu = class(TForm)
@@ -18,12 +18,10 @@ type
     pnlTop: TPanel;
     Menu: TMainMenu;
     teste1: TMenuItem;
-    btnExit: TSpeedButton;
+    btnSair: TSpeedButton;
     pnlUser: TPanel;
     Panel1: TPanel;
     imgLogoUser: TImage;
-    lbUser: TLabel;
-    Label1: TLabel;
   private
     { Private declarations }
   public

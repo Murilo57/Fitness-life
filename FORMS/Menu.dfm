@@ -23,7 +23,6 @@ object frmMenu: TfrmMenu
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitHeight = 705
     object imgBackGround: TImage
       Left = 0
       Top = 49
@@ -4367,7 +4366,6 @@ object frmMenu: TfrmMenu
       BevelOuter = bvNone
       Color = 16501564
       TabOrder = 0
-      ExplicitTop = 600
       object btnClient: TSpeedButton
         AlignWithMargins = True
         Left = 912
@@ -6528,14 +6526,14 @@ object frmMenu: TfrmMenu
       BevelOuter = bvNone
       Color = 16415278
       TabOrder = 1
-      object btnSair: TSpeedButton
+      object btnExit: TSpeedButton
         AlignWithMargins = True
         Left = 1008
         Top = 3
         Width = 83
         Height = 43
         Align = alRight
-        Caption = 'Sair'
+        Caption = 'Exit'
         Flat = True
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -6685,7 +6683,32 @@ object frmMenu: TfrmMenu
         BevelOuter = bvNone
         Color = 16415278
         TabOrder = 0
-        ExplicitTop = -6
+        object lbUser: TLabel
+          Left = 90
+          Top = 25
+          Width = 29
+          Height = 16
+          Caption = 'User'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label1: TLabel
+          Left = 79
+          Top = 7
+          Width = 58
+          Height = 16
+          Caption = 'Welcome'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
         object Panel1: TPanel
           Left = 0
           Top = 0
@@ -6695,7 +6718,6 @@ object frmMenu: TfrmMenu
           BevelOuter = bvNone
           Color = 16415278
           TabOrder = 0
-          ExplicitHeight = 41
           object imgLogoUser: TImage
             Left = 0
             Top = 0

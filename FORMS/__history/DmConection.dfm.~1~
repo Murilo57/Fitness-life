@@ -1,0 +1,28 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 325
+  Width = 404
+  object DataSource1: TDataSource
+    Left = 184
+    Top = 88
+  end
+  object conexao: TSQLConnection
+    Left = 24
+    Top = 16
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 104
+    Top = 80
+  end
+  object SQLDataSet1: TSQLDataSet
+    Params = <>
+    Left = 40
+    Top = 80
+  end
+  object DataSetProvider1: TDataSetProvider
+    Left = 96
+    Top = 144
+  end
+end

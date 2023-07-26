@@ -1,0 +1,28 @@
+unit DmConection;
+
+interface
+
+uses
+  SysUtils, Classes, DBXpress, FMTBcd, Provider, SqlExpr, DB, DBClient;
+
+type
+  TDataModule1 = class(TDataModule)
+    dtsLogin: TDataSource;
+    conexao: TSQLConnection;
+    cdsLogin: TClientDataSet;
+    sqlLogin: TSQLDataSet;
+    dspLogin: TDataSetProvider;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{$R *.dfm}
+
+end.
