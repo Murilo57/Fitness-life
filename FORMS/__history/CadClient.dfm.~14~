@@ -18,11 +18,15 @@ object frmCadClient: TfrmCadClient
     Top = 41
     Width = 865
     Height = 616
-    ActivePage = tbRegister
+    ActivePage = tbQueryClient
     Align = alClient
     TabOrder = 0
+    ExplicitWidth = 1029
+    ExplicitHeight = 632
     object tbQueryClient: TTabSheet
       Caption = 'Query Client'
+      ExplicitWidth = 1021
+      ExplicitHeight = 604
       object pnFilter: TPanel
         Left = 0
         Top = 0
@@ -32,6 +36,7 @@ object frmCadClient: TfrmCadClient
         BevelOuter = bvNone
         Color = clSilver
         TabOrder = 0
+        ExplicitWidth = 1021
         object Bevel1: TBevel
           Left = 23
           Top = 11
@@ -182,6 +187,8 @@ object frmCadClient: TfrmCadClient
     object tbRegister: TTabSheet
       Caption = 'Register Client'
       ImageIndex = 1
+      ExplicitWidth = 1021
+      ExplicitHeight = 604
       object pnRegisters: TPanel
         Left = 0
         Top = 0
@@ -189,6 +196,7 @@ object frmCadClient: TfrmCadClient
         Height = 275
         Align = alTop
         TabOrder = 0
+        ExplicitWidth = 1021
         object bvRegister: TBevel
           Left = 16
           Top = 11
@@ -223,7 +231,7 @@ object frmCadClient: TfrmCadClient
           Font.Style = []
           ParentFont = False
         end
-        object lbDateRegister: TLabel
+        object Label3: TLabel
           Left = 297
           Top = 79
           Width = 98
@@ -265,7 +273,7 @@ object frmCadClient: TfrmCadClient
           Font.Style = []
           ParentFont = False
         end
-        object lbCPF: TLabel
+        object Label6: TLabel
           Left = 50
           Top = 79
           Width = 22
@@ -279,7 +287,7 @@ object frmCadClient: TfrmCadClient
           Font.Style = []
           ParentFont = False
         end
-        object lbMonthPaymenth: TLabel
+        object Label7: TLabel
           Left = 48
           Top = 146
           Width = 107
@@ -293,12 +301,12 @@ object frmCadClient: TfrmCadClient
           Font.Style = []
           ParentFont = False
         end
-        object lbWeight: TLabel
+        object Label8: TLabel
           Left = 450
           Top = 81
-          Width = 40
+          Width = 47
           Height = 16
-          Caption = 'Weight'
+          Caption = 'WEIGHT'
           FocusControl = DBEdit8
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -307,12 +315,12 @@ object frmCadClient: TfrmCadClient
           Font.Style = []
           ParentFont = False
         end
-        object lbHeight: TLabel
+        object Label9: TLabel
           Left = 527
           Top = 79
-          Width = 36
+          Width = 43
           Height = 16
-          Caption = 'Height'
+          Caption = 'HEIGHT'
           FocusControl = DBEdit9
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -466,7 +474,9 @@ object frmCadClient: TfrmCadClient
         BevelOuter = bvNone
         Color = clSilver
         TabOrder = 1
-        object btnCancel: TBitBtn
+        ExplicitTop = 554
+        ExplicitWidth = 1021
+        object btnNewClient: TBitBtn
           AlignWithMargins = True
           Left = 506
           Top = 8
@@ -485,7 +495,6 @@ object frmCadClient: TfrmCadClient
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
-          OnClick = btnCancelClick
           Glyph.Data = {
             36100000424D3610000000000000360000002800000020000000200000000100
             20000000000000100000C40E0000C40E00000000000000000000000000000000
@@ -617,8 +626,10 @@ object frmCadClient: TfrmCadClient
             00005C5CE70B2525D3522424D3911515D2C80D0DD4EB0909D3F90707D1F90505
             D0EC0505C9CA0303C1950303C6550000D70D0000000000000000000000000000
             0000000000000000000000000000000000000000000000000000}
+          ExplicitLeft = 366
+          ExplicitTop = 11
         end
-        object btnNewClient: TBitBtn
+        object BitBtn1: TBitBtn
           AlignWithMargins = True
           Left = 15
           Top = 8
@@ -637,7 +648,6 @@ object frmCadClient: TfrmCadClient
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 1
-          OnClick = btnNewClientClick
           Glyph.Data = {
             36100000424D3610000000000000360000002800000020000000200000000100
             20000000000000100000C40E0000C40E00000000000000000000000000FF0000
@@ -769,6 +779,9 @@ object frmCadClient: TfrmCadClient
             3AFF343E58FF303C55FF2B3751FF26324DFF172335FF000000FF000000FF0000
             00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
             00FF000000FF000000FF000000FF000000FF000000FF000000FF}
+          ExplicitLeft = 16
+          ExplicitTop = 6
+          ExplicitHeight = 50
         end
         object btnChangeRegis: TBitBtn
           AlignWithMargins = True
@@ -789,7 +802,6 @@ object frmCadClient: TfrmCadClient
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 2
-          OnClick = btnChangeRegisClick
           Glyph.Data = {
             36100000424D3610000000000000360000002800000020000000200000000100
             20000000000000100000C40E0000C40E00000000000000000000000000FF0000
@@ -922,7 +934,7 @@ object frmCadClient: TfrmCadClient
             00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
             00FF000000FF000000FF000000FF000000FF000000FF000000FF}
         end
-        object btnSave: TBitBtn
+        object BitBtn3: TBitBtn
           AlignWithMargins = True
           Left = 272
           Top = 8
@@ -941,7 +953,6 @@ object frmCadClient: TfrmCadClient
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 3
-          OnClick = btnSaveClick
           Glyph.Data = {
             42100000424D4210000000000000420000002800000020000000200000000100
             20000300000000100000000000000000000000000000000000000000FF0000FF
@@ -1074,8 +1085,10 @@ object frmCadClient: TfrmCadClient
             0000000000000000000000000000000000000000000000000000000000000000
             0000000000000000000000000000000000000000000000000000000000000000
             000000000000}
+          ExplicitLeft = 249
+          ExplicitTop = 11
         end
-        object btnDelete: TBitBtn
+        object BitBtn2: TBitBtn
           AlignWithMargins = True
           Left = 389
           Top = 8
@@ -1225,6 +1238,8 @@ object frmCadClient: TfrmCadClient
             0000000000000000000000000000000000000000000000000000000000000000
             0000000000000000000000000000000000000000000000000000000000000000
             0000000000000000000000000000000000000000000000000000}
+          ExplicitLeft = 366
+          ExplicitTop = 11
         end
       end
       object Panel1: TPanel
@@ -1236,6 +1251,9 @@ object frmCadClient: TfrmCadClient
         BevelOuter = bvNone
         Color = clWhite
         TabOrder = 2
+        ExplicitTop = 281
+        ExplicitWidth = 1021
+        ExplicitHeight = 267
         object Image1: TImage
           Left = 0
           Top = 0
@@ -10089,6 +10107,7 @@ object frmCadClient: TfrmCadClient
     BevelOuter = bvNone
     Color = 16501564
     TabOrder = 1
+    ExplicitWidth = 1029
     object lblTittle: TLabel
       AlignWithMargins = True
       Left = 7

@@ -53,8 +53,6 @@ type
     btnChangeRegis: TBitBtn;
     btnSave: TBitBtn;
     btnDelete: TBitBtn;
-    procedure btnSaveClick(Sender: TObject);
-    procedure btnChangeRegisClick(Sender: TObject);
     procedure btnCancelClick(Sender: TObject);
     procedure btnNewClientClick(Sender: TObject);
   private
@@ -77,18 +75,12 @@ begin
   dm.cdsClient.CancelUpdates;
 end;
 
-procedure TfrmCadClient.btnChangeRegisClick(Sender: TObject);
-begin
-  dm.cdsClient.Edit;
-end;
-
 procedure TfrmCadClient.btnNewClientClick(Sender: TObject);
 var
   proximo: Integer;
 begin
   if dm.cdsClientID.IsNull then
   begin
-    dm.cdsClient.Edit;
     dm.cdsClientID.Value := 1;
     dm.cdsClientDATACAD.Value := Date;
   end
@@ -102,12 +94,6 @@ begin
     dm.cdsClientDATACAD.Value := Date;
     edName.SetFocus;
   end;
-end;
-
-procedure TfrmCadClient.btnSaveClick(Sender: TObject);
-begin
-  dm.cdsClient.Post;
-  dm.cdsClient.ApplyUpdates(0);
 end;
 
 end.

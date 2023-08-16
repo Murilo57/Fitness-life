@@ -44,28 +44,6 @@ type
     cdsClientMONTH_PAYMENT: TFMTBCDField;
     cdsClientWEIGHT: TFloatField;
     cdsClientHEIGHT: TFloatField;
-    sqlListClient: TSQLDataSet;
-    IntegerField1: TIntegerField;
-    StringField1: TStringField;
-    DateField1: TDateField;
-    IntegerField2: TIntegerField;
-    StringField2: TStringField;
-    StringField3: TStringField;
-    FMTBCDField1: TFMTBCDField;
-    FloatField1: TFloatField;
-    FloatField2: TFloatField;
-    cdsListClient: TClientDataSet;
-    IntegerField3: TIntegerField;
-    StringField4: TStringField;
-    DateField2: TDateField;
-    IntegerField4: TIntegerField;
-    StringField5: TStringField;
-    StringField6: TStringField;
-    FMTBCDField2: TFMTBCDField;
-    FloatField3: TFloatField;
-    FloatField4: TFloatField;
-    dtsListClient: TDataSource;
-    dspListClient: TDataSetProvider;
   private
     { Private declarations }
   public

@@ -88,7 +88,6 @@ var
 begin
   if dm.cdsClientID.IsNull then
   begin
-    dm.cdsClient.Edit;
     dm.cdsClientID.Value := 1;
     dm.cdsClientDATACAD.Value := Date;
   end

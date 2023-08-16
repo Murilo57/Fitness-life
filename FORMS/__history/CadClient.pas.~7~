@@ -32,31 +32,27 @@ type
     edID: TDBEdit;
     lbName: TLabel;
     edName: TDBEdit;
-    lbDateRegister: TLabel;
+    Label3: TLabel;
     edRegistrationDate: TDBEdit;
     lbAge: TLabel;
     edAge: TDBEdit;
     lbSex: TLabel;
     edSex: TDBEdit;
-    lbCPF: TLabel;
+    Label6: TLabel;
     DBEdit6: TDBEdit;
-    lbMonthPaymenth: TLabel;
+    Label7: TLabel;
     DBEdit7: TDBEdit;
-    lbWeight: TLabel;
+    Label8: TLabel;
     DBEdit8: TDBEdit;
-    lbHeight: TLabel;
+    Label9: TLabel;
     DBEdit9: TDBEdit;
     Panel1: TPanel;
     Image1: TImage;
-    btnCancel: TBitBtn;
     btnNewClient: TBitBtn;
+    BitBtn1: TBitBtn;
     btnChangeRegis: TBitBtn;
-    btnSave: TBitBtn;
-    btnDelete: TBitBtn;
-    procedure btnSaveClick(Sender: TObject);
-    procedure btnChangeRegisClick(Sender: TObject);
-    procedure btnCancelClick(Sender: TObject);
-    procedure btnNewClientClick(Sender: TObject);
+    BitBtn3: TBitBtn;
+    BitBtn2: TBitBtn;
   private
     { Private declarations }
   public
@@ -71,43 +67,5 @@ implementation
 uses DmConection;
 
 {$R *.dfm}
-
-procedure TfrmCadClient.btnCancelClick(Sender: TObject);
-begin
-  dm.cdsClient.CancelUpdates;
-end;
-
-procedure TfrmCadClient.btnChangeRegisClick(Sender: TObject);
-begin
-  dm.cdsClient.Edit;
-end;
-
-procedure TfrmCadClient.btnNewClientClick(Sender: TObject);
-var
-  proximo: Integer;
-begin
-  if dm.cdsClientID.IsNull then
-  begin
-    dm.cdsClient.Edit;
-    dm.cdsClientID.Value := 1;
-    dm.cdsClientDATACAD.Value := Date;
-  end
-  else
-  begin
-    dm.cdsClient.Open;
-    dm.cdsClient.Last;
-    proximo := dm.cdsClientID.AsInteger + 1;
-    dm.cdsClient.Append;
-    dm.cdsClientID.AsInteger := proximo;
-    dm.cdsClientDATACAD.Value := Date;
-    edName.SetFocus;
-  end;
-end;
-
-procedure TfrmCadClient.btnSaveClick(Sender: TObject);
-begin
-  dm.cdsClient.Post;
-  dm.cdsClient.ApplyUpdates(0);
-end;
 
 end.

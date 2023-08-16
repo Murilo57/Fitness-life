@@ -941,7 +941,6 @@ object frmCadClient: TfrmCadClient
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 3
-          OnClick = btnSaveClick
           Glyph.Data = {
             42100000424D4210000000000000420000002800000020000000200000000100
             20000300000000100000000000000000000000000000000000000000FF0000FF
