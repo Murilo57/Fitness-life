@@ -812,6 +812,7 @@ object frmFinancial: TfrmFinancial
           Height = 453
           Align = alClient
           DataSource = dm.dtsFinancial
+          FixedColor = 15446277
           TabOrder = 1
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
@@ -822,18 +823,35 @@ object frmFinancial: TfrmFinancial
             item
               Expanded = False
               FieldName = 'ID_CLIENT'
-              Title.Caption = 'CUST CLIENT'
+              Title.Caption = 'ID'
+              Width = 27
               Visible = True
             end
             item
               Expanded = False
               FieldName = 'NAME'
+              Width = 210
               Visible = True
             end
             item
               Expanded = False
               FieldName = 'MONTH_PAY'
               Title.Caption = 'MONTH PAY'
+              Width = 83
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'DATE_REGIS'
+              Title.Caption = 'REGISTER'
+              Width = 103
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'DATE_PAY'
+              Title.Caption = 'DATE PAYMENT'
+              Width = 91
               Visible = True
             end>
         end
@@ -841,9 +859,7 @@ object frmFinancial: TfrmFinancial
       object tbRegister: TTabSheet
         Caption = 'Register'
         ImageIndex = 1
-        ExplicitLeft = 8
-        ExplicitTop = 25
-        object Panel1: TPanel
+        object pnRegisters: TPanel
           Left = 0
           Top = 0
           Width = 1161
@@ -861,20 +877,156 @@ object frmFinancial: TfrmFinancial
             Margins.Right = 10
             Margins.Bottom = 10
             Align = alClient
-            ExplicitLeft = 34
-            ExplicitTop = 1
-            ExplicitWidth = 287
-            ExplicitHeight = 1126
+            ExplicitTop = 13
+          end
+          object lbPayDay: TLabel
+            Left = 43
+            Top = 98
+            Width = 53
+            Height = 16
+            Caption = 'Pay Day'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object lbID: TLabel
+            Left = 43
+            Top = 26
+            Width = 14
+            Height = 16
+            Caption = 'ID'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object lbName: TLabel
+            Left = 122
+            Top = 26
+            Width = 35
+            Height = 16
+            Caption = 'Name'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object lbDateRegis: TLabel
+            Left = 267
+            Top = 26
+            Width = 90
+            Height = 16
+            Caption = 'Date Register'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object lbMontPay: TLabel
+            Left = 208
+            Top = 98
+            Width = 121
+            Height = 16
+            Caption = 'Monthly Payment'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object edName: TDBEdit
+            Left = 120
+            Top = 48
+            Width = 121
+            Height = 24
+            DataField = 'NAME'
+            DataSource = dm.dtsRegisFinancial
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 0
+          end
+          object edID: TDBEdit
+            Left = 43
+            Top = 48
+            Width = 42
+            Height = 24
+            DataField = 'ID'
+            DataSource = dm.dtsRegisFinancial
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 1
+          end
+          object edDateRegis: TDBEdit
+            Left = 267
+            Top = 48
+            Width = 121
+            Height = 24
+            DataField = 'DATE_REGIS'
+            DataSource = dm.dtsRegisFinancial
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 2
+          end
+          object edDatePay: TDBEdit
+            Left = 43
+            Top = 120
+            Width = 121
+            Height = 24
+            DataField = 'DATE_REGIS'
+            DataSource = dm.dtsRegisFinancial
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 3
+          end
+          object edMonthPay: TDBEdit
+            Left = 208
+            Top = 120
+            Width = 121
+            Height = 24
+            DataField = 'MONTH_PAY'
+            DataSource = dm.dtsRegisFinancial
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 4
           end
         end
-        object Panel3: TPanel
+        object pnButtons: TPanel
           Left = 0
           Top = 289
           Width = 1161
           Height = 96
           Align = alTop
           TabOrder = 1
-          ExplicitTop = 291
           object bvButtons: TBevel
             AlignWithMargins = True
             Left = 11

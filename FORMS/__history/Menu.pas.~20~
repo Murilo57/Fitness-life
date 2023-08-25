@@ -59,7 +59,7 @@ end;
 procedure TfrmMenu.btnFinancialClick(Sender: TObject);
 begin
   frmFinancial := TfrmFinancial.create(nil);
-  frmFinancial.ShowModal;
+  frmFinancial := ShowModal;
 end;
 
 procedure TfrmMenu.FormShow(Sender: TObject);

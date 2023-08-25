@@ -4366,7 +4366,6 @@ object frmMenu: TfrmMenu
       BevelOuter = bvNone
       Color = 16501564
       TabOrder = 0
-      ExplicitTop = 606
       object btnClient: TSpeedButton
         AlignWithMargins = True
         Left = 806
@@ -5443,6 +5442,7 @@ object frmMenu: TfrmMenu
         Layout = blGlyphTop
         ParentFont = False
         ParentBiDiMode = False
+        OnClick = btnFinancialClick
         ExplicitLeft = 920
         ExplicitHeight = 47
       end

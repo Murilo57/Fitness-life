@@ -11,6 +11,7 @@ object frmFinancial: TfrmFinancial
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 13
   object pnlTop: TPanel
@@ -752,7 +753,6 @@ object frmFinancial: TfrmFinancial
       ActivePage = tbQuery
       Align = alClient
       TabOrder = 0
-      ExplicitTop = 3
       object tbQuery: TTabSheet
         Caption = 'Query'
         object pnFilter: TPanel
@@ -813,6 +813,7 @@ object frmFinancial: TfrmFinancial
           Height = 453
           Align = alClient
           DataSource = dm.dtsFinancial
+          FixedColor = 15446277
           TabOrder = 1
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
@@ -823,117 +824,37 @@ object frmFinancial: TfrmFinancial
             item
               Expanded = False
               FieldName = 'ID_CLIENT'
-              Title.Caption = 'CUST CLIENT'
+              Title.Caption = 'ID'
+              Width = 27
               Visible = True
             end
             item
               Expanded = False
               FieldName = 'NAME'
+              Width = 210
               Visible = True
             end
             item
               Expanded = False
               FieldName = 'MONTH_PAY'
               Title.Caption = 'MONTH PAY'
+              Width = 83
               Visible = True
             end
             item
               Expanded = False
               FieldName = 'DATE_REGIS'
               Title.Caption = 'REGISTER'
+              Width = 103
               Visible = True
             end
             item
               Expanded = False
               FieldName = 'DATE_PAY'
               Title.Caption = 'DATE PAYMENT'
-              Visible = True
-            end
-            item
-              Expanded = False
-              FieldName = 'VALUE'
+              Width = 91
               Visible = True
             end>
-        end
-      end
-      object tbRegister: TTabSheet
-        Caption = 'Register'
-        ImageIndex = 1
-        object Panel1: TPanel
-          Left = 0
-          Top = 0
-          Width = 1161
-          Height = 289
-          Align = alTop
-          TabOrder = 0
-          object bvRegister: TBevel
-            AlignWithMargins = True
-            Left = 11
-            Top = 11
-            Width = 1139
-            Height = 267
-            Margins.Left = 10
-            Margins.Top = 10
-            Margins.Right = 10
-            Margins.Bottom = 10
-            Align = alClient
-            ExplicitLeft = 34
-            ExplicitTop = 1
-            ExplicitWidth = 287
-            ExplicitHeight = 1126
-          end
-          object edName: TDBEdit
-            Left = 104
-            Top = 48
-            Width = 121
-            Height = 21
-            TabOrder = 0
-          end
-          object edID: TDBEdit
-            Left = 32
-            Top = 48
-            Width = 42
-            Height = 21
-            TabOrder = 1
-          end
-          object DBEdit3: TDBEdit
-            Left = 304
-            Top = 48
-            Width = 121
-            Height = 21
-            TabOrder = 2
-          end
-          object DBEdit4: TDBEdit
-            Left = 304
-            Top = 104
-            Width = 121
-            Height = 21
-            TabOrder = 3
-          end
-        end
-        object Panel3: TPanel
-          Left = 0
-          Top = 289
-          Width = 1161
-          Height = 96
-          Align = alTop
-          TabOrder = 1
-          object bvButtons: TBevel
-            AlignWithMargins = True
-            Left = 11
-            Top = 11
-            Width = 1139
-            Height = 74
-            Margins.Left = 10
-            Margins.Top = 10
-            Margins.Right = 10
-            Margins.Bottom = 10
-            Align = alClient
-            ExplicitLeft = 18
-            ExplicitTop = 15
-            ExplicitWidth = 1126
-            ExplicitHeight = 65
-          end
         end
       end
     end

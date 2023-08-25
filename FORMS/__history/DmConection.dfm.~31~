@@ -1,6 +1,6 @@
 object dm: Tdm
   OldCreateOrder = False
-  Height = 325
+  Height = 357
   Width = 404
   object dtsLogin: TDataSource
     DataSet = cdsLogin
@@ -338,6 +338,17 @@ object dm: Tdm
       Precision = 15
       Size = 2
     end
+    object sqlFinancialDATE_REGIS: TDateField
+      FieldName = 'DATE_REGIS'
+    end
+    object sqlFinancialDATE_PAYMENT: TDateField
+      FieldName = 'DATE_PAYMENT'
+    end
+    object sqlFinancialVALUE: TFMTBCDField
+      FieldName = 'VALUE'
+      Precision = 15
+      Size = 2
+    end
   end
   object dspFinancial: TDataSetProvider
     DataSet = sqlFinancial
@@ -363,6 +374,17 @@ object dm: Tdm
     end
     object cdsFinancialMONTH_PAY: TFMTBCDField
       FieldName = 'MONTH_PAY'
+      Precision = 15
+      Size = 2
+    end
+    object cdsFinancialDATE_REGIS: TDateField
+      FieldName = 'DATE_REGIS'
+    end
+    object cdsFinancialDATE_PAYMENT: TDateField
+      FieldName = 'DATE_PAYMENT'
+    end
+    object cdsFinancialVALUE: TFMTBCDField
+      FieldName = 'VALUE'
       Precision = 15
       Size = 2
     end
@@ -396,6 +418,12 @@ object dm: Tdm
       Precision = 15
       Size = 2
     end
+    object sqlRegisFinancialDATE_REGIS: TDateField
+      FieldName = 'DATE_REGIS'
+    end
+    object sqlRegisFinancialDATE_PAYMENT: TDateField
+      FieldName = 'DATE_PAYMENT'
+    end
   end
   object dspRegisFinancial: TDataSetProvider
     DataSet = sqlRegisFinancial
@@ -423,6 +451,12 @@ object dm: Tdm
       FieldName = 'MONTH_PAY'
       Precision = 15
       Size = 2
+    end
+    object cdsRegisFinancialDATE_REGIS: TDateField
+      FieldName = 'DATE_REGIS'
+    end
+    object cdsRegisFinancialDATE_PAYMENT: TDateField
+      FieldName = 'DATE_PAYMENT'
     end
   end
   object dtsRegisFinancial: TDataSource

@@ -812,6 +812,7 @@ object frmFinancial: TfrmFinancial
           Height = 453
           Align = alClient
           DataSource = dm.dtsFinancial
+          FixedColor = 15446277
           TabOrder = 1
           TitleFont.Charset = DEFAULT_CHARSET
           TitleFont.Color = clWindowText
@@ -822,18 +823,35 @@ object frmFinancial: TfrmFinancial
             item
               Expanded = False
               FieldName = 'ID_CLIENT'
-              Title.Caption = 'CUST CLIENT'
+              Title.Caption = 'ID'
+              Width = 27
               Visible = True
             end
             item
               Expanded = False
               FieldName = 'NAME'
+              Width = 210
               Visible = True
             end
             item
               Expanded = False
               FieldName = 'MONTH_PAY'
               Title.Caption = 'MONTH PAY'
+              Width = 83
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'DATE_REGIS'
+              Title.Caption = 'REGISTER'
+              Width = 103
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'DATE_PAY'
+              Title.Caption = 'DATE PAYMENT'
+              Width = 91
               Visible = True
             end>
         end
@@ -841,16 +859,104 @@ object frmFinancial: TfrmFinancial
       object tbRegister: TTabSheet
         Caption = 'Register'
         ImageIndex = 1
-        ExplicitLeft = 5
-        ExplicitTop = 25
         object Panel1: TPanel
           Left = 0
           Top = 0
           Width = 1161
           Height = 289
           Align = alTop
-          Caption = 'Panel1'
           TabOrder = 0
+          object bvRegister: TBevel
+            AlignWithMargins = True
+            Left = 11
+            Top = 11
+            Width = 1139
+            Height = 267
+            Margins.Left = 10
+            Margins.Top = 10
+            Margins.Right = 10
+            Margins.Bottom = 10
+            Align = alClient
+            ExplicitLeft = 34
+            ExplicitTop = 1
+            ExplicitWidth = 287
+            ExplicitHeight = 1126
+          end
+          object edName: TDBEdit
+            Left = 120
+            Top = 48
+            Width = 121
+            Height = 24
+            DataField = 'NAME'
+            DataSource = dm.dtsRegisFinancial
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 0
+          end
+          object edID: TDBEdit
+            Left = 43
+            Top = 48
+            Width = 42
+            Height = 24
+            DataField = 'ID'
+            DataSource = dm.dtsRegisFinancial
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 1
+          end
+          object edDateRegis: TDBEdit
+            Left = 267
+            Top = 48
+            Width = 121
+            Height = 24
+            DataField = 'DATE_REGIS'
+            DataSource = dm.dtsRegisFinancial
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 2
+          end
+          object edDatePay: TDBEdit
+            Left = 43
+            Top = 120
+            Width = 121
+            Height = 24
+            DataField = 'DATE_REGIS'
+            DataSource = dm.dtsRegisFinancial
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 3
+          end
+          object edMonthPay: TDBEdit
+            Left = 208
+            Top = 120
+            Width = 121
+            Height = 24
+            DataField = 'MONTH_PAY'
+            DataSource = dm.dtsRegisFinancial
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 4
+          end
         end
         object Panel3: TPanel
           Left = 0
@@ -858,8 +964,23 @@ object frmFinancial: TfrmFinancial
           Width = 1161
           Height = 96
           Align = alTop
-          Caption = 'Panel3'
           TabOrder = 1
+          object bvButtons: TBevel
+            AlignWithMargins = True
+            Left = 11
+            Top = 11
+            Width = 1139
+            Height = 74
+            Margins.Left = 10
+            Margins.Top = 10
+            Margins.Right = 10
+            Margins.Bottom = 10
+            Align = alClient
+            ExplicitLeft = 18
+            ExplicitTop = 15
+            ExplicitWidth = 1126
+            ExplicitHeight = 65
+          end
         end
       end
     end

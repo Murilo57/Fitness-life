@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Buttons, ExtCtrls, StdCtrls, ComCtrls, Grids, DBGrids;
+  Dialogs, Buttons, ExtCtrls, StdCtrls, ComCtrls, Grids, DBGrids, Mask, DBCtrls;
 
 type
   TfrmFinancial = class(TForm)
@@ -15,16 +15,25 @@ type
     pnImg: TPanel;
     imgFinancial: TImage;
     pnCentro: TPanel;
-    pgFinancial: TPageControl;
-    tbConsulta: TTabSheet;
-    tbCadastro: TTabSheet;
+    pgCenter: TPageControl;
+    tbQuery: TTabSheet;
+    tbRegister: TTabSheet;
     pnFilter: TPanel;
-    DBGrid1: TDBGrid;
+    gFinancial: TDBGrid;
     Bevel1: TBevel;
-    ComboBox1: TComboBox;
-    ComboBox2: TComboBox;
-    Edit1: TEdit;
-    Edit2: TEdit;
+    cbConsulta1: TComboBox;
+    cbConsulta2: TComboBox;
+    Label1: TLabel;
+    edConsulta2: TEdit;
+    edConsulta1: TEdit;
+    Panel1: TPanel;
+    Panel3: TPanel;
+    bvButtons: TBevel;
+    bvRegister: TBevel;
+    edName: TDBEdit;
+    edID: TDBEdit;
+    DBEdit3: TDBEdit;
+    DBEdit4: TDBEdit;
     procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }
@@ -36,6 +45,8 @@ var
   frmFinancial: TfrmFinancial;
 
 implementation
+
+uses DmConection;
 
 {$R *.dfm}
 

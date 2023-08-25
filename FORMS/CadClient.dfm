@@ -466,6 +466,7 @@ object frmCadClient: TfrmCadClient
         BevelOuter = bvNone
         Color = clSilver
         TabOrder = 1
+        ExplicitTop = 538
         object btnCancel: TBitBtn
           AlignWithMargins = True
           Left = 506
@@ -617,6 +618,7 @@ object frmCadClient: TfrmCadClient
             00005C5CE70B2525D3522424D3911515D2C80D0DD4EB0909D3F90707D1F90505
             D0EC0505C9CA0303C1950303C6550000D70D0000000000000000000000000000
             0000000000000000000000000000000000000000000000000000}
+          ExplicitTop = 11
         end
         object btnNewClient: TBitBtn
           AlignWithMargins = True

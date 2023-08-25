@@ -17,7 +17,6 @@ type
     pnCentro: TPanel;
     pgCenter: TPageControl;
     tbQuery: TTabSheet;
-    tbRegister: TTabSheet;
     pnFilter: TPanel;
     gFinancial: TDBGrid;
     Bevel1: TBevel;
@@ -26,14 +25,6 @@ type
     Label1: TLabel;
     edConsulta2: TEdit;
     edConsulta1: TEdit;
-    Panel1: TPanel;
-    Panel3: TPanel;
-    bvButtons: TBevel;
-    bvRegister: TBevel;
-    edName: TDBEdit;
-    edID: TDBEdit;
-    DBEdit3: TDBEdit;
-    DBEdit4: TDBEdit;
     procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }

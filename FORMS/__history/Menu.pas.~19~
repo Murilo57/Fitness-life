@@ -26,7 +26,6 @@ type
     lbWelcome: TLabel;
     btnUsers: TSpeedButton;
     lbLevel: TLabel;
-    procedure btnFinancialClick(Sender: TObject);
     procedure btnClientClick(Sender: TObject);
     procedure btnExitClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -41,7 +40,7 @@ var
 
 implementation
 
-uses DmConection, CadClient, Financial;
+uses DmConection, CadClient;
 
 {$R *.dfm}
 
@@ -54,12 +53,6 @@ end;
 procedure TfrmMenu.btnExitClick(Sender: TObject);
 begin
   Application.Terminate;
-end;
-
-procedure TfrmMenu.btnFinancialClick(Sender: TObject);
-begin
-  frmFinancial := TfrmFinancial.create(nil);
-  frmFinancial.ShowModal;
 end;
 
 procedure TfrmMenu.FormShow(Sender: TObject);

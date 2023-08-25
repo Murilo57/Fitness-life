@@ -144,6 +144,8 @@ object dm: Tdm
     end
     object sqlClientWEIGHT: TFloatField
       FieldName = 'WEIGHT'
+      DisplayFormat = '#,#0.00'
+      EditFormat = '#,#0.00'
     end
     object sqlClientHEIGHT: TFloatField
       FieldName = 'HEIGHT'
@@ -195,7 +197,8 @@ object dm: Tdm
     object cdsClientWEIGHT: TFloatField
       DisplayWidth = 12
       FieldName = 'WEIGHT'
-      EditFormat = '#0.00'
+      DisplayFormat = '#,#0.00'
+      EditFormat = '#,#0.00'
     end
     object cdsClientHEIGHT: TFloatField
       DisplayWidth = 12
@@ -246,6 +249,8 @@ object dm: Tdm
     end
     object FloatField1: TFloatField
       FieldName = 'WEIGHT'
+      DisplayFormat = '#,#0.00'
+      EditFormat = '#,#0.00'
     end
     object FloatField2: TFloatField
       FieldName = 'HEIGHT'
@@ -302,7 +307,8 @@ object dm: Tdm
     object FloatField3: TFloatField
       DisplayWidth = 12
       FieldName = 'WEIGHT'
-      EditFormat = '#0.00'
+      DisplayFormat = '#,#0.00'
+      EditFormat = '#,#0.00'
     end
     object FloatField4: TFloatField
       DisplayWidth = 12
@@ -393,85 +399,5 @@ object dm: Tdm
     DataSet = cdsFinancial
     Left = 136
     Top = 232
-  end
-  object sqlRegisFinancial: TSQLDataSet
-    SchemaName = 'sysdba'
-    CommandText = 'select * from MOVI_FINANCIAL'
-    MaxBlobSize = -1
-    Params = <>
-    SQLConnection = conexao
-    Left = 40
-    Top = 280
-    object IntegerField5: TIntegerField
-      FieldName = 'ID'
-      Required = True
-    end
-    object IntegerField6: TIntegerField
-      FieldName = 'ID_CLIENT'
-    end
-    object StringField7: TStringField
-      FieldName = 'NAME'
-      Size = 100
-    end
-    object FMTBCDField3: TFMTBCDField
-      FieldName = 'MONTH_PAY'
-      Precision = 15
-      Size = 2
-    end
-    object sqlRegisFinancialDATE_REGIS: TDateField
-      FieldName = 'DATE_REGIS'
-    end
-    object sqlRegisFinancialDATE_PAYMENT: TDateField
-      FieldName = 'DATE_PAYMENT'
-    end
-    object sqlRegisFinancialVALUE: TFMTBCDField
-      FieldName = 'VALUE'
-      Precision = 15
-      Size = 2
-    end
-  end
-  object dspRegisFinancial: TDataSetProvider
-    DataSet = sqlRegisFinancial
-    Left = 72
-    Top = 280
-  end
-  object cdsRegisFinancial: TClientDataSet
-    Aggregates = <>
-    Params = <>
-    ProviderName = 'dspRegisFinancial'
-    Left = 104
-    Top = 280
-    object IntegerField7: TIntegerField
-      FieldName = 'ID'
-      Required = True
-    end
-    object IntegerField8: TIntegerField
-      FieldName = 'ID_CLIENT'
-    end
-    object StringField8: TStringField
-      FieldName = 'NAME'
-      Size = 100
-    end
-    object FMTBCDField4: TFMTBCDField
-      FieldName = 'MONTH_PAY'
-      Precision = 15
-      Size = 2
-    end
-    object cdsRegisFinancialDATE_REGIS: TDateField
-      FieldName = 'DATE_REGIS'
-    end
-    object cdsRegisFinancialDATE_PAYMENT: TDateField
-      FieldName = 'DATE_PAYMENT'
-    end
-    object cdsRegisFinancialVALUE: TFMTBCDField
-      FieldName = 'VALUE'
-      Precision = 15
-      Size = 2
-    end
-  end
-  object dtsRegisFinancial: TDataSource
-    DataSet = cdsRegisFinancial
-    Left = 136
-    Top = 280
   end
 end

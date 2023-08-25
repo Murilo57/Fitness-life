@@ -84,12 +84,24 @@ type
     StringField7: TStringField;
     FMTBCDField3: TFMTBCDField;
     dspRegisFinancial: TDataSetProvider;
-    ClientDataSet1: TClientDataSet;
+    cdsRegisFinancial: TClientDataSet;
     IntegerField7: TIntegerField;
     IntegerField8: TIntegerField;
     StringField8: TStringField;
     FMTBCDField4: TFMTBCDField;
-    DataSource1: TDataSource;
+    dtsRegisFinancial: TDataSource;
+    sqlRegisFinancialDATE_REGIS: TDateField;
+    sqlRegisFinancialDATE_PAYMENT: TDateField;
+    cdsRegisFinancialDATE_REGIS: TDateField;
+    cdsRegisFinancialDATE_PAYMENT: TDateField;
+    sqlFinancialDATE_REGIS: TDateField;
+    sqlFinancialDATE_PAYMENT: TDateField;
+    cdsFinancialDATE_REGIS: TDateField;
+    cdsFinancialDATE_PAYMENT: TDateField;
+    sqlRegisFinancialVALUE: TFMTBCDField;
+    cdsRegisFinancialVALUE: TFMTBCDField;
+    sqlFinancialVALUE: TFMTBCDField;
+    cdsFinancialVALUE: TFMTBCDField;
   private
     { Private declarations }
   public

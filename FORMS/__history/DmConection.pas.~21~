@@ -78,6 +78,28 @@ type
     cdsFinancialID_CLIENT: TIntegerField;
     cdsFinancialNAME: TStringField;
     cdsFinancialMONTH_PAY: TFMTBCDField;
+    sqlRegisFinancial: TSQLDataSet;
+    IntegerField5: TIntegerField;
+    IntegerField6: TIntegerField;
+    StringField7: TStringField;
+    FMTBCDField3: TFMTBCDField;
+    dspRegisFinancial: TDataSetProvider;
+    cdsRegisFinancial: TClientDataSet;
+    IntegerField7: TIntegerField;
+    IntegerField8: TIntegerField;
+    StringField8: TStringField;
+    FMTBCDField4: TFMTBCDField;
+    dtsRegisFinancial: TDataSource;
+    sqlRegisFinancialDATE_REGIS: TDateField;
+    sqlRegisFinancialDATE_PAYMENT: TDateField;
+    cdsRegisFinancialDATE_REGIS: TDateField;
+    cdsRegisFinancialDATE_PAYMENT: TDateField;
+    sqlFinancialDATE_REGIS: TDateField;
+    sqlFinancialDATE_PAYMENT: TDateField;
+    cdsFinancialDATE_REGIS: TDateField;
+    cdsFinancialDATE_PAYMENT: TDateField;
+    sqlFinancialVALUE: TFMTBCDField;
+    cdsFinancialVALUE: TFMTBCDField;
   private
     { Private declarations }
   public
