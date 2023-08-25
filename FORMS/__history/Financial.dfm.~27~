@@ -749,10 +749,9 @@ object frmFinancial: TfrmFinancial
       Top = 0
       Width = 1169
       Height = 578
-      ActivePage = tbQuery
+      ActivePage = tbRegister
       Align = alClient
       TabOrder = 0
-      ExplicitTop = 3
       object tbQuery: TTabSheet
         Caption = 'Query'
         object pnFilter: TPanel
@@ -847,11 +846,6 @@ object frmFinancial: TfrmFinancial
               Expanded = False
               FieldName = 'DATE_PAY'
               Title.Caption = 'DATE PAYMENT'
-              Visible = True
-            end
-            item
-              Expanded = False
-              FieldName = 'VALUE'
               Visible = True
             end>
         end

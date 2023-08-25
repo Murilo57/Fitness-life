@@ -30,10 +30,9 @@ type
     Panel3: TPanel;
     bvButtons: TBevel;
     bvRegister: TBevel;
-    edName: TDBEdit;
-    edID: TDBEdit;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
-    DBEdit4: TDBEdit;
     procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }

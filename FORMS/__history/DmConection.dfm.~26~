@@ -344,11 +344,6 @@ object dm: Tdm
     object sqlFinancialDATE_PAYMENT: TDateField
       FieldName = 'DATE_PAYMENT'
     end
-    object sqlFinancialVALUE: TFMTBCDField
-      FieldName = 'VALUE'
-      Precision = 15
-      Size = 2
-    end
   end
   object dspFinancial: TDataSetProvider
     DataSet = sqlFinancial
@@ -382,11 +377,6 @@ object dm: Tdm
     end
     object cdsFinancialDATE_PAYMENT: TDateField
       FieldName = 'DATE_PAYMENT'
-    end
-    object cdsFinancialVALUE: TFMTBCDField
-      FieldName = 'VALUE'
-      Precision = 15
-      Size = 2
     end
   end
   object dtsFinancial: TDataSource
@@ -424,11 +414,6 @@ object dm: Tdm
     object sqlRegisFinancialDATE_PAYMENT: TDateField
       FieldName = 'DATE_PAYMENT'
     end
-    object sqlRegisFinancialVALUE: TFMTBCDField
-      FieldName = 'VALUE'
-      Precision = 15
-      Size = 2
-    end
   end
   object dspRegisFinancial: TDataSetProvider
     DataSet = sqlRegisFinancial
@@ -462,11 +447,6 @@ object dm: Tdm
     end
     object cdsRegisFinancialDATE_PAYMENT: TDateField
       FieldName = 'DATE_PAYMENT'
-    end
-    object cdsRegisFinancialVALUE: TFMTBCDField
-      FieldName = 'VALUE'
-      Precision = 15
-      Size = 2
     end
   end
   object dtsRegisFinancial: TDataSource

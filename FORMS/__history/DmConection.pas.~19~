@@ -101,7 +101,6 @@ type
     sqlRegisFinancialVALUE: TFMTBCDField;
     cdsRegisFinancialVALUE: TFMTBCDField;
     sqlFinancialVALUE: TFMTBCDField;
-    cdsFinancialVALUE: TFMTBCDField;
   private
     { Private declarations }
   public

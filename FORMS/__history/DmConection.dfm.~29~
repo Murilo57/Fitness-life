@@ -383,11 +383,6 @@ object dm: Tdm
     object cdsFinancialDATE_PAYMENT: TDateField
       FieldName = 'DATE_PAYMENT'
     end
-    object cdsFinancialVALUE: TFMTBCDField
-      FieldName = 'VALUE'
-      Precision = 15
-      Size = 2
-    end
   end
   object dtsFinancial: TDataSource
     DataSet = cdsFinancial

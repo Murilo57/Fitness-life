@@ -94,14 +94,6 @@ type
     sqlRegisFinancialDATE_PAYMENT: TDateField;
     cdsRegisFinancialDATE_REGIS: TDateField;
     cdsRegisFinancialDATE_PAYMENT: TDateField;
-    sqlFinancialDATE_REGIS: TDateField;
-    sqlFinancialDATE_PAYMENT: TDateField;
-    cdsFinancialDATE_REGIS: TDateField;
-    cdsFinancialDATE_PAYMENT: TDateField;
-    sqlRegisFinancialVALUE: TFMTBCDField;
-    cdsRegisFinancialVALUE: TFMTBCDField;
-    sqlFinancialVALUE: TFMTBCDField;
-    cdsFinancialVALUE: TFMTBCDField;
   private
     { Private declarations }
   public

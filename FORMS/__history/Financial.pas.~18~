@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Buttons, ExtCtrls, StdCtrls, ComCtrls, Grids, DBGrids, Mask, DBCtrls;
+  Dialogs, Buttons, ExtCtrls, StdCtrls, ComCtrls, Grids, DBGrids;
 
 type
   TfrmFinancial = class(TForm)
@@ -30,10 +30,6 @@ type
     Panel3: TPanel;
     bvButtons: TBevel;
     bvRegister: TBevel;
-    edName: TDBEdit;
-    edID: TDBEdit;
-    DBEdit3: TDBEdit;
-    DBEdit4: TDBEdit;
     procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }
