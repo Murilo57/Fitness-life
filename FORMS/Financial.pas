@@ -25,6 +25,8 @@ type
     Label1: TLabel;
     edConsulta2: TEdit;
     edConsulta1: TEdit;
+    btnFinancial: TSpeedButton;
+    procedure btnFinancialClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }
@@ -37,9 +39,15 @@ var
 
 implementation
 
-uses DmConection;
+uses DmConection, Payment;
 
 {$R *.dfm}
+
+procedure TfrmFinancial.btnFinancialClick(Sender: TObject);
+begin
+  frmPayment := TfrmPayment.Create(nil);
+  frmPayment.ShowModal;
+end;
 
 procedure TfrmFinancial.btnSairClick(Sender: TObject);
 begin

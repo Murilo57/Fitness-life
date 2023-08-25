@@ -1266,9 +1266,8 @@ object frmFinancial: TfrmFinancial
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000}
       ParentFont = False
-      OnClick = btnFinancialClick
-      ExplicitLeft = 4
-      ExplicitTop = 2
+      OnClick = btnSairClick
+      ExplicitHeight = 51
     end
   end
   object pnCentro: TPanel

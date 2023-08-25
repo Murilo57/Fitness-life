@@ -11,6 +11,7 @@ object frmFinancial: TfrmFinancial
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 13
   object pnlTop: TPanel
@@ -749,7 +750,7 @@ object frmFinancial: TfrmFinancial
       Top = 0
       Width = 1169
       Height = 578
-      ActivePage = tbRegister
+      ActivePage = tbQuery
       Align = alClient
       TabOrder = 0
       object tbQuery: TTabSheet
@@ -854,133 +855,6 @@ object frmFinancial: TfrmFinancial
               Width = 91
               Visible = True
             end>
-        end
-      end
-      object tbRegister: TTabSheet
-        Caption = 'Register'
-        ImageIndex = 1
-        object Panel1: TPanel
-          Left = 0
-          Top = 0
-          Width = 1161
-          Height = 289
-          Align = alTop
-          TabOrder = 0
-          object bvRegister: TBevel
-            AlignWithMargins = True
-            Left = 11
-            Top = 11
-            Width = 1139
-            Height = 267
-            Margins.Left = 10
-            Margins.Top = 10
-            Margins.Right = 10
-            Margins.Bottom = 10
-            Align = alClient
-            ExplicitLeft = 34
-            ExplicitTop = 1
-            ExplicitWidth = 287
-            ExplicitHeight = 1126
-          end
-          object edName: TDBEdit
-            Left = 120
-            Top = 48
-            Width = 121
-            Height = 24
-            DataField = 'NAME'
-            DataSource = dm.dtsRegisFinancial
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -13
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-            TabOrder = 0
-          end
-          object edID: TDBEdit
-            Left = 43
-            Top = 48
-            Width = 42
-            Height = 24
-            DataField = 'ID'
-            DataSource = dm.dtsRegisFinancial
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -13
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-            TabOrder = 1
-          end
-          object edDateRegis: TDBEdit
-            Left = 267
-            Top = 48
-            Width = 121
-            Height = 24
-            DataField = 'DATE_REGIS'
-            DataSource = dm.dtsRegisFinancial
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -13
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-            TabOrder = 2
-          end
-          object edDatePay: TDBEdit
-            Left = 43
-            Top = 120
-            Width = 121
-            Height = 24
-            DataField = 'DATE_REGIS'
-            DataSource = dm.dtsRegisFinancial
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -13
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-            TabOrder = 3
-          end
-          object edMonthPay: TDBEdit
-            Left = 208
-            Top = 120
-            Width = 121
-            Height = 24
-            DataField = 'MONTH_PAY'
-            DataSource = dm.dtsRegisFinancial
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
-            Font.Height = -13
-            Font.Name = 'Tahoma'
-            Font.Style = [fsBold]
-            ParentFont = False
-            TabOrder = 4
-          end
-        end
-        object Panel3: TPanel
-          Left = 0
-          Top = 289
-          Width = 1161
-          Height = 96
-          Align = alTop
-          TabOrder = 1
-          object bvButtons: TBevel
-            AlignWithMargins = True
-            Left = 11
-            Top = 11
-            Width = 1139
-            Height = 74
-            Margins.Left = 10
-            Margins.Top = 10
-            Margins.Right = 10
-            Margins.Bottom = 10
-            Align = alClient
-            ExplicitLeft = 18
-            ExplicitTop = 15
-            ExplicitWidth = 1126
-            ExplicitHeight = 65
-          end
         end
       end
     end
