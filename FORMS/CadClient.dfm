@@ -126,7 +126,7 @@ object frmCadClient: TfrmCadClient
         Width = 857
         Height = 491
         Align = alClient
-        DataSource = dm.dtsClient
+        DataSource = dm.dtsListClient
         FixedColor = 16435047
         TabOrder = 1
         TitleFont.Charset = DEFAULT_CHARSET
@@ -1094,6 +1094,7 @@ object frmCadClient: TfrmCadClient
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 4
+          OnClick = btnDeleteClick
           Glyph.Data = {
             36100000424D3610000000000000360000002800000020000000200000000100
             20000000000000100000C40E0000C40E00000000000000000000000000000000

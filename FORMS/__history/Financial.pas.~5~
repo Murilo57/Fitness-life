@@ -1,0 +1,30 @@
+unit Financial;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Buttons, ExtCtrls, StdCtrls;
+
+type
+  TfrmFinancial = class(TForm)
+    pnlTop: TPanel;
+    Panel2: TPanel;
+    SpeedButton1: TSpeedButton;
+    Label1: TLabel;
+    Panel1: TPanel;
+    imgLogoUser: TImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmFinancial: TfrmFinancial;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -114,7 +114,6 @@ procedure TfrmCadClient.btnSaveClick(Sender: TObject);
 begin
   dm.cdsClient.Post;
   dm.cdsClient.ApplyUpdates(0);
-  dm.cdsListClient.Refresh;
 end;
 
 end.

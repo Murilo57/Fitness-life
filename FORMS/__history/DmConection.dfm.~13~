@@ -195,7 +195,6 @@ object dm: Tdm
     object cdsClientWEIGHT: TFloatField
       DisplayWidth = 12
       FieldName = 'WEIGHT'
-      EditFormat = '#0.00'
     end
     object cdsClientHEIGHT: TFloatField
       DisplayWidth = 12
@@ -302,7 +301,6 @@ object dm: Tdm
     object FloatField3: TFloatField
       DisplayWidth = 12
       FieldName = 'WEIGHT'
-      EditFormat = '#0.00'
     end
     object FloatField4: TFloatField
       DisplayWidth = 12

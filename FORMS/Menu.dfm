@@ -24,8 +24,6 @@ object frmMenu: TfrmMenu
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 1094
-    ExplicitHeight = 685
     object imgBackGround: TImage
       Left = 0
       Top = 57
@@ -4357,10 +4355,7 @@ object frmMenu: TfrmMenu
         28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A28A2800A
         28A2800A28A2800A28A2803FFFD9}
       Stretch = True
-      ExplicitLeft = 3
-      ExplicitTop = 47
-      ExplicitWidth = 1094
-      ExplicitHeight = 531
+      ExplicitTop = 54
     end
     object pnlButtons: TPanel
       Left = 0
@@ -4371,8 +4366,7 @@ object frmMenu: TfrmMenu
       BevelOuter = bvNone
       Color = 16501564
       TabOrder = 0
-      ExplicitTop = 580
-      ExplicitWidth = 1094
+      ExplicitTop = 606
       object btnClient: TSpeedButton
         AlignWithMargins = True
         Left = 806
@@ -6534,7 +6528,7 @@ object frmMenu: TfrmMenu
       Height = 57
       Align = alTop
       BevelOuter = bvNone
-      Color = 16415278
+      Color = 16501564
       TabOrder = 1
       object btnExit: TSpeedButton
         AlignWithMargins = True
@@ -7225,9 +7219,8 @@ object frmMenu: TfrmMenu
         Height = 57
         Align = alLeft
         BevelOuter = bvNone
-        Color = 16415278
+        Color = 16501564
         TabOrder = 0
-        ExplicitHeight = 49
         object lbUser: TLabel
           Left = 91
           Top = 20
@@ -7274,9 +7267,8 @@ object frmMenu: TfrmMenu
           Height = 57
           Align = alLeft
           BevelOuter = bvNone
-          Color = 16415278
+          Color = 16501564
           TabOrder = 0
-          ExplicitHeight = 49
           object imgLogoUser: TImage
             Left = 0
             Top = 0
@@ -7799,10 +7791,8 @@ object frmMenu: TfrmMenu
               0000000000000000000000000000000000000000000000000000000000000000
               0000000000000000000000000000000000000000000000000000000000000000
               0000}
-            ExplicitLeft = 40
-            ExplicitTop = 16
-            ExplicitWidth = 105
-            ExplicitHeight = 105
+            ExplicitLeft = 2
+            ExplicitTop = -6
           end
         end
       end
